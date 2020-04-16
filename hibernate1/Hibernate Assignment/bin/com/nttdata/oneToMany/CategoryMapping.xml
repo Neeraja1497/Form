@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+<class name="com.nttdata.manyToOne.Category">
+<id name="categId"></id>
+<property name="CategoryId"></property>
+<id name="categName"></id>
+<property name="CategoryName"></property>
+<set name="Laptop" cascade="all">
+<key column="forevenId"></key>
+<one-to-many class="com.nttdata.oneToMany.Product"
+</set>
+
+</class>
+</hibernate-mapping>      
